@@ -1,10 +1,11 @@
 # QA_REPORT.md
 
 ## Statut
-- En attente
+- GO
 
-## UI foundation
-- Verifier aussi `60_qa/UI_FOUNDATION_CHECKLIST.md` pour la coherence du socle standard.
+## Résultat
+- La version FR/RU a été vérifiée sur l URL publique dédiée.
+- La page `Réalisations`, le mobile-first et le socle i18n/Sanity sont conformes au brief.
 
-## I18N
-- Si le projet est multilingue, verifier aussi `60_qa/I18N_QA_CHECKLIST.md`.
+## URL de validation
+- `https://web-acb6-multi.vercel.app`

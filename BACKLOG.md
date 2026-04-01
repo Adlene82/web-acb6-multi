@@ -9,5 +9,5 @@
 - [x] Mettre en place Sanity pour le contenu editable et la page `Réalisations`.
 - [x] Seed et publier les documents RU Sanity.
 - [x] Executer QA, build et preview sur la langue de base.
-- [ ] Revalider la matrice publique FR/RU après publication.
-- [ ] Publier le dépôt GitHub et la preview Vercel du projet `web-acb6-multi`.
+- [x] Revalider la matrice publique FR/RU après publication.
+- [x] Publier le dépôt GitHub et la preview Vercel du projet `web-acb6-multi`.
