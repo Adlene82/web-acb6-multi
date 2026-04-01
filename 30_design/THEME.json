@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "brand": "ACB6",
+    "project_id": "web-acb6-multi",
+    "style": "premium-editorial-minimal",
+    "reference": "https://www.apple.com/fr/",
+    "description": "Theme tokens for a premium B2B refonte: clear, sober, mobile-first, FR/RU ready."
+  },
+  "fonts": {
+    "heading": "Inter, system-ui, sans-serif",
+    "body": "Inter, system-ui, sans-serif",
+    "mono": "ui-monospace, SFMono-Regular, Menlo, monospace"
+  },
+  "colors": {
+    "background": "#F7F8FB",
+    "surface": "#FFFFFF",
+    "surfaceAlt": "#EEF2F7",
+    "surfaceDark": "#0E1625",
+    "text": "#121926",
+    "textMuted": "#556476",
+    "textOnDark": "#F8FAFC",
+    "border": "#D6DEE8",
+    "primary": "#1E5EFF",
+    "primaryHover": "#174CD6",
+    "primarySoft": "#E8F0FF",
+    "secondary": "#23364B",
+    "success": "#1F8A5B",
+    "warning": "#B7791F",
+    "danger": "#C0392B",
+    "focus": "#1E5EFF"
+  },
+  "typography": {
+    "size": {
+      "xs": "0.75rem",
+      "sm": "0.875rem",
+      "base": "1rem",
+      "lg": "1.125rem",
+      "xl": "1.375rem",
+      "2xl": "1.75rem",
+      "3xl": "2.25rem",
+      "4xl": "3rem",
+      "5xl": "3.75rem"
+    },
+    "lineHeight": {
+      "tight": 1.12,
+      "snug": 1.25,
+      "normal": 1.6,
+      "relaxed": 1.75
+    },
+    "weight": {
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700
+    },
+    "letterSpacing": {
+      "tight": "-0.03em",
+      "normal": "0em",
+      "wide": "0.04em"
+    }
+  },
+  "spacing": {
+    "1": "0.25rem",
+    "2": "0.5rem",
+    "3": "0.75rem",
+    "4": "1rem",
+    "6": "1.5rem",
+    "8": "2rem",
+    "12": "3rem",
+    "16": "4rem",
+    "24": "6rem",
+    "32": "8rem"
+  },
+  "radius": {
+    "sm": "0.5rem",
+    "md": "0.875rem",
+    "lg": "1.25rem",
+    "xl": "1.75rem",
+    "pill": "999px"
+  },
+  "shadow": {
+    "sm": "0 8px 20px rgba(18,25,38,0.06)",
+    "md": "0 18px 44px rgba(18,25,38,0.10)",
+    "lg": "0 28px 72px rgba(18,25,38,0.14)"
+  },
+  "layout": {
+    "containerMax": "1280px",
+    "readingMax": "720px",
+    "headerHeight": "80px",
+    "sectionPaddingMobile": "3.5rem",
+    "sectionPaddingDesktop": "6rem",
+    "gridColumns": 12,
+    "cardMinWidth": "280px",
+    "cardIdealWidth": "320px"
+  },
+  "breakpoints": {
+    "sm": "640px",
+    "md": "768px",
+    "lg": "1024px",
+    "xl": "1280px",
+    "2xl": "1440px"
+  },
+  "motion": {
+    "fast": "150ms ease-out",
+    "base": "220ms ease-out",
+    "slow": "300ms ease-in-out"
+  },
+  "components": {
+    "button": {
+      "height": "48px",
+      "radius": "999px",
+      "paddingX": "1.25rem",
+      "fontWeight": 600,
+      "minTouch": "44px"
+    },
+    "card": {
+      "radius": "1.25rem",
+      "padding": "1.5rem",
+      "border": "1px solid #D6DEE8",
+      "shadow": "0 8px 20px rgba(18,25,38,0.06)",
+      "minHeight": "auto"
+    },
+    "input": {
+      "height": "52px",
+      "radius": "0.875rem",
+      "border": "1px solid #D6DEE8",
+      "bg": "#FFFFFF"
+    },
+    "header": {
+      "height": "80px",
+      "border": "1px solid #D6DEE8"
+    },
+    "languageSwitch": {
+      "style": "text",
+      "activeWeight": 600,
+      "inactiveWeight": 500,
+      "gap": "0.5rem",
+      "reserveWidth": true
+    }
+  }
+}

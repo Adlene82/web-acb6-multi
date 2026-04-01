@@ -1,0 +1,443 @@
+[
+  {
+    "_id": "siteSettings",
+    "_type": "siteSettings",
+    "siteName": "ACB6",
+    "legalName": "ACB6",
+    "brandBaseline": "Conseil & architecture SI",
+    "brandDescription": "Cabinet de conseil et d'architecture SI pour les transformations lisibles, pilotables et durables.",
+    "primaryNavigation": [
+      {
+        "_type": "link",
+        "label": "Accueil",
+        "href": "/",
+        "variant": "text",
+        "openInNewTab": false
+      },
+      {
+        "_type": "link",
+        "label": "Expertises",
+        "href": "/expertises",
+        "variant": "text",
+        "openInNewTab": false
+      },
+      {
+        "_type": "link",
+        "label": "R\u00e9alisations",
+        "href": "/realisations",
+        "variant": "text",
+        "openInNewTab": false
+      },
+      {
+        "_type": "link",
+        "label": "\u00c0 propos",
+        "href": "/a-propos",
+        "variant": "text",
+        "openInNewTab": false
+      },
+      {
+        "_type": "link",
+        "label": "Contact",
+        "href": "/contact",
+        "variant": "primary",
+        "openInNewTab": false
+      }
+    ],
+    "footerNavigation": [
+      {
+        "_type": "link",
+        "label": "Accueil",
+        "href": "/",
+        "variant": "text",
+        "openInNewTab": false
+      },
+      {
+        "_type": "link",
+        "label": "Expertises",
+        "href": "/expertises",
+        "variant": "text",
+        "openInNewTab": false
+      },
+      {
+        "_type": "link",
+        "label": "R\u00e9alisations",
+        "href": "/realisations",
+        "variant": "text",
+        "openInNewTab": false
+      },
+      {
+        "_type": "link",
+        "label": "\u00c0 propos",
+        "href": "/a-propos",
+        "variant": "text",
+        "openInNewTab": false
+      },
+      {
+        "_type": "link",
+        "label": "Contact",
+        "href": "/contact",
+        "variant": "text",
+        "openInNewTab": false
+      }
+    ],
+    "contactMethods": [
+      {
+        "_type": "contactMethod",
+        "label": "Email",
+        "value": "contact@acb6.fr",
+        "href": "mailto:contact@acb6.fr"
+      },
+      {
+        "_type": "contactMethod",
+        "label": "T\u00e9l\u00e9phone",
+        "value": "+33 (0)0 00 00 00 00",
+        "href": "tel:+33000000000"
+      }
+    ],
+    "locations": [
+      "France - missions de conseil et d'architecture SI"
+    ],
+    "legalNoticeLabel": "Mentions l\u00e9gales \u00e0 connecter.",
+    "legalNoticeUrl": "",
+    "themeSettings": {
+      "_type": "themeSettings",
+      "brandTagline": "Conseil & architecture SI",
+      "primaryAccent": "#1E5EFF",
+      "secondaryAccent": "#0E1625",
+      "heroTone": "light-premium",
+      "buttonStyle": "solid",
+      "notes": "P\u00e9rim\u00e8tre volontairement born\u00e9 : contenus, navigation, accents et marque sans \u00e9dition libre du CSS."
+    }
+  },
+  {
+    "_id": "homePage",
+    "_type": "homePage",
+    "eyebrow": "Conseil & architecture SI",
+    "title": "Donnez \u00e0 votre transformation digitale une base plus claire, plus cr\u00e9dible et plus durable.",
+    "lead": "ACB6 accompagne les organisations qui doivent structurer leurs d\u00e9cisions, aligner m\u00e9tier et architecture, et faire avancer des environnements complexes sans perdre la ma\u00eetrise.",
+    "primaryCta": {
+      "_type": "cta",
+      "link": {
+        "_type": "link",
+        "label": "Nous contacter",
+        "href": "/contact",
+        "variant": "primary",
+        "openInNewTab": false
+      }
+    },
+    "secondaryCta": {
+      "_type": "cta",
+      "link": {
+        "_type": "link",
+        "label": "Voir nos r\u00e9alisations",
+        "href": "/realisations",
+        "variant": "secondary",
+        "openInNewTab": false
+      }
+    },
+    "heroStats": [
+      {
+        "_type": "stat",
+        "value": "B2B",
+        "label": "Conseil et architecture SI orient\u00e9s impact"
+      },
+      {
+        "_type": "stat",
+        "value": "Mobile-first",
+        "label": "Con\u00e7u pour une lecture fluide sur tous les \u00e9crans"
+      },
+      {
+        "_type": "stat",
+        "value": "\u00c9ditable",
+        "label": "Structure pr\u00eate pour enrichir les r\u00e9alisations"
+      }
+    ],
+    "heroPanelHighlights": [
+      "Architecture lisible",
+      "D\u00e9cisions structur\u00e9es",
+      "Ex\u00e9cution durable"
+    ],
+    "expertisesTitle": "Des expertises structur\u00e9es pour transformer sans brouiller la lecture.",
+    "expertisesIntro": "Chaque domaine est pr\u00e9sent\u00e9 avec un angle clair, des b\u00e9n\u00e9fices lisibles et un niveau de sobri\u00e9t\u00e9 coh\u00e9rent avec la direction premium retenue.",
+    "contextsTitle": "Une posture cr\u00e9dible pour les environnements m\u00e9tiers et techniques exigeants.",
+    "contextsIntro": "ACB6 intervient l\u00e0 o\u00f9 la lisibilit\u00e9, la coordination et la qualit\u00e9 d'architecture conditionnent la r\u00e9ussite des projets.",
+    "sectors": [
+      "\u00c9nergie & Utilities",
+      "Syst\u00e8mes complexes",
+      "Transformation transverse",
+      "Architecture applicative",
+      "Outillage m\u00e9tier"
+    ],
+    "methodTitle": "Une progression simple : cadrer, concevoir, transformer.",
+    "methodIntro": "Le site refl\u00e8te la m\u00eame discipline que l'approche projet : peu d'effets, une hi\u00e9rarchie forte et des messages qui se laissent scanner rapidement.",
+    "proofPoints": [
+      "Approche sobre, structur\u00e9e et orient\u00e9e r\u00e9sultat",
+      "Expertise sur des contextes complexes et exigeants",
+      "Hi\u00e9rarchie \u00e9ditoriale pens\u00e9e pour la cr\u00e9dibilit\u00e9 B2B",
+      "Collection de r\u00e9alisations pr\u00eate \u00e0 \u00eatre reli\u00e9e \u00e0 un CMS"
+    ],
+    "proofStripTitle": "Une base front-end pens\u00e9e pour la lisibilit\u00e9, la cr\u00e9dibilit\u00e9 et la mont\u00e9e en gamme.",
+    "proofStripMetrics": [
+      {
+        "_type": "stat",
+        "value": "5",
+        "label": "pages cibles structur\u00e9es"
+      },
+      {
+        "_type": "stat",
+        "value": "1",
+        "label": "collection R\u00e9alisations \u00e9ditable"
+      },
+      {
+        "_type": "stat",
+        "value": "100%",
+        "label": "align\u00e9e sur les tokens du th\u00e8me"
+      }
+    ],
+    "finalCta": {
+      "_type": "cta",
+      "eyebrow": "\u00c9change",
+      "helperText": "Une prise de contact simple, cr\u00e9dible et directement exploitable.",
+      "link": {
+        "_type": "link",
+        "label": "\u00c9changer sur votre projet",
+        "href": "/contact",
+        "variant": "primary",
+        "openInNewTab": false
+      }
+    }
+  },
+  {
+    "_id": "aboutPage",
+    "_type": "aboutPage",
+    "eyebrow": "\u00c0 propos",
+    "title": "ACB6 accompagne les transformations qui exigent m\u00e9thode, lisibilit\u00e9 et ma\u00eetrise.",
+    "lead": "La page \u00c0 propos renforce la cr\u00e9dibilit\u00e9 de la marque sans tomber dans un discours institutionnel froid ou g\u00e9n\u00e9rique.",
+    "missionTitle": "Mission",
+    "missionText": "Aligner m\u00e9tier, architecture et delivery pour faire \u00e9merger des trajectoires de transformation plus utiles, plus lisibles et plus robustes.",
+    "postureTitle": "Posture",
+    "postureText": "Privil\u00e9gier la pr\u00e9cision, la p\u00e9dagogie et la preuve projet plut\u00f4t que l'effet de surface ou le discours vague.",
+    "values": [
+      "Clart\u00e9 des d\u00e9cisions et des responsabilit\u00e9s",
+      "Architecture maintenable avant sophistication",
+      "Posture B2B cr\u00e9dible et sans surpromesse",
+      "Exigence de lecture sur mobile comme sur desktop"
+    ],
+    "credibilityPoints": [
+      "Un discours pilot\u00e9 par la preuve projet plut\u00f4t que par la promesse vague.",
+      "Une hi\u00e9rarchie \u00e9ditoriale pens\u00e9e pour des contextes m\u00e9tiers et techniques exigeants."
+    ],
+    "finalCta": {
+      "_type": "cta",
+      "eyebrow": "\u00c9change",
+      "helperText": "Un \u00e9change utile pour cadrer le contexte, les enjeux et les prochaines d\u00e9cisions.",
+      "link": {
+        "_type": "link",
+        "label": "Parler de votre trajectoire",
+        "href": "/contact",
+        "variant": "primary",
+        "openInNewTab": false
+      }
+    }
+  },
+  {
+    "_id": "contactPage",
+    "_type": "contactPage",
+    "eyebrow": "Contact",
+    "title": "Parlons de votre projet, de votre trajectoire SI ou de votre besoin de modernisation.",
+    "lead": "Une page de contact simple, rassurante et pr\u00eate \u00e0 \u00eatre branch\u00e9e sur votre outil de collecte ou votre CRM.",
+    "sectionTitle": "Un point d'entr\u00e9e direct, clair et sans friction.",
+    "sectionIntro": "Le contenu \u00e9ditorial se pilote d\u00e9sormais depuis Sanity, tout en gardant le formulaire pr\u00eat pour un raccordement technique ult\u00e9rieur.",
+    "contactMethods": [
+      {
+        "_type": "contactMethod",
+        "label": "Email",
+        "value": "contact@acb6.fr",
+        "href": "mailto:contact@acb6.fr"
+      },
+      {
+        "_type": "contactMethod",
+        "label": "T\u00e9l\u00e9phone",
+        "value": "+33 (0)0 00 00 00 00",
+        "href": "tel:+33000000000"
+      }
+    ],
+    "reassuranceEyebrow": "R\u00e9assurance",
+    "reassuranceText": "Le formulaire est pr\u00eat pour raccordement technique. Les labels sont visibles, les champs sont sur une colonne mobile et les zones interactives respectent une base d'accessibilit\u00e9.",
+    "formIntro": "D\u00e9crivez votre contexte, vos enjeux et votre horizon de d\u00e9cision. La structure du formulaire reste volontairement simple pour faciliter l'int\u00e9gration future."
+  },
+  {
+    "_id": "expertise-transformation-digitale",
+    "_type": "expertise",
+    "title": "Transformation digitale",
+    "slug": {
+      "_type": "slug",
+      "current": "transformation-digitale"
+    },
+    "summary": "Cadrer, prioriser et s\u00e9curiser les programmes de transformation avec une vision m\u00e9tier exploitable.",
+    "points": [
+      "Alignement m\u00e9tier et SI",
+      "Feuille de route pragmatique",
+      "D\u00e9cisions structurantes document\u00e9es"
+    ],
+    "featuredOnHome": true,
+    "order": 1
+  },
+  {
+    "_id": "expertise-architecture-fonctionnelle",
+    "_type": "expertise",
+    "title": "Architecture fonctionnelle",
+    "slug": {
+      "_type": "slug",
+      "current": "architecture-fonctionnelle"
+    },
+    "summary": "Clarifier les flux, les r\u00f4les et les d\u00e9pendances pour rendre les trajectoires plus lisibles.",
+    "points": [
+      "Cartographie cible",
+      "Parcours et processus",
+      "Vision transverse"
+    ],
+    "featuredOnHome": true,
+    "order": 2
+  },
+  {
+    "_id": "expertise-architecture-applicative",
+    "_type": "expertise",
+    "title": "Architecture applicative",
+    "slug": {
+      "_type": "slug",
+      "current": "architecture-applicative"
+    },
+    "summary": "Construire des socles applicatifs coh\u00e9rents, maintenables et capables d'\u00e9voluer.",
+    "points": [
+      "Urbanisation",
+      "Interop\u00e9rabilit\u00e9",
+      "D\u00e9coupage ma\u00eetris\u00e9"
+    ],
+    "featuredOnHome": true,
+    "order": 3
+  },
+  {
+    "_id": "expertise-architecture-technique-infrastructure",
+    "_type": "expertise",
+    "title": "Architecture technique & infrastructure",
+    "slug": {
+      "_type": "slug",
+      "current": "architecture-technique-infrastructure"
+    },
+    "summary": "S\u00e9curiser les choix techniques qui soutiennent la performance, la r\u00e9silience et l'exploitation.",
+    "points": [
+      "Socle technique",
+      "R\u00e9silience",
+      "Performance & gouvernance"
+    ],
+    "featuredOnHome": true,
+    "order": 4
+  },
+  {
+    "_id": "expertise-outils-collaboratifs-web-mobile",
+    "_type": "expertise",
+    "title": "Outils collaboratifs, web et mobile",
+    "slug": {
+      "_type": "slug",
+      "current": "outils-collaboratifs-web-mobile"
+    },
+    "summary": "Faire \u00e9merger des solutions utiles, lisibles et adoptables pour les \u00e9quipes et les m\u00e9tiers.",
+    "points": [
+      "Portails m\u00e9tier",
+      "Applications de support",
+      "Exp\u00e9riences orient\u00e9es usage"
+    ],
+    "featuredOnHome": true,
+    "order": 5
+  },
+  {
+    "_id": "expertise-energie-utilities",
+    "_type": "expertise",
+    "title": "\u00c9nergie & Utilities",
+    "slug": {
+      "_type": "slug",
+      "current": "energie-utilities"
+    },
+    "summary": "Mettre \u00e0 profit une exp\u00e9rience cr\u00e9dible des environnements complexes et fortement contraints.",
+    "points": [
+      "Syst\u00e8mes critiques",
+      "Contexte r\u00e9glementaire",
+      "Vision long terme"
+    ],
+    "featuredOnHome": true,
+    "order": 6
+  },
+  {
+    "_id": "realisation-pilotage-si-industrialise",
+    "_type": "realisations",
+    "slug": {
+      "_type": "slug",
+      "current": "pilotage-si-industrialise"
+    },
+    "title": "Pilotage SI industrialis\u00e9 pour un op\u00e9rateur multi-sites",
+    "sector": "\u00c9nergie & Utilities",
+    "summary": "Structuration d'une trajectoire SI pour am\u00e9liorer la lisibilit\u00e9 des priorit\u00e9s et la coordination des \u00e9quipes.",
+    "challenge": "L'organisation faisait face \u00e0 des d\u00e9pendances applicatives peu visibles, \u00e0 une gouvernance diffuse et \u00e0 une difficult\u00e9 croissante \u00e0 arbitrer les \u00e9volutions.",
+    "solution": "ACB6 a cadr\u00e9 une cartographie cible, d\u00e9fini des principes d'architecture et install\u00e9 un cadre de pilotage commun entre m\u00e9tiers, projets et exploitation.",
+    "results": "Les d\u00e9cisions sont devenues plus rapides, les chantiers mieux s\u00e9quenc\u00e9s et les sujets \u00e0 forte valeur plus faciles \u00e0 d\u00e9fendre.",
+    "featured": true,
+    "published": true,
+    "publishedAt": "2026-03-01",
+    "seoTitle": "Pilotage SI industrialis\u00e9 | ACB6",
+    "seoDescription": "Exemple de r\u00e9alisation ACB6 autour du pilotage SI et de la structuration d'une trajectoire de transformation.",
+    "tags": [
+      "architecture",
+      "pilotage",
+      "transformation"
+    ]
+  },
+  {
+    "_id": "realisation-modernisation-portail-metier",
+    "_type": "realisations",
+    "slug": {
+      "_type": "slug",
+      "current": "modernisation-portail-metier"
+    },
+    "title": "Modernisation d'un portail m\u00e9tier \u00e0 fort usage terrain",
+    "sector": "Services complexes",
+    "summary": "Refonte d'un socle applicatif et de l'exp\u00e9rience de service pour r\u00e9duire la friction op\u00e9rationnelle.",
+    "challenge": "Le portail existant freinait l'adoption, multipliait les contournements et rendait les parcours essentiels plus co\u00fbteux.",
+    "solution": "ACB6 a r\u00e9align\u00e9 les besoins m\u00e9tier, la structure applicative et les exigences techniques afin de proposer un cadre de modernisation durable.",
+    "results": "L'\u00e9quipe a obtenu une base plus claire, plus facile \u00e0 faire \u00e9voluer et mieux adapt\u00e9e aux usages prioritaires.",
+    "featured": true,
+    "published": true,
+    "publishedAt": "2026-02-15",
+    "seoTitle": "Modernisation d'un portail m\u00e9tier | ACB6",
+    "seoDescription": "R\u00e9alisation ACB6 sur la modernisation d'un portail m\u00e9tier dans un contexte de services complexes.",
+    "tags": [
+      "web",
+      "portail",
+      "adoption"
+    ]
+  },
+  {
+    "_id": "realisation-cadre-architecture-programme",
+    "_type": "realisations",
+    "slug": {
+      "_type": "slug",
+      "current": "cadre-architecture-programme"
+    },
+    "title": "Cadre d'architecture pour un programme de transformation transverse",
+    "sector": "Conseil & architecture SI",
+    "summary": "Mise en place d'un cadre de d\u00e9cision pour articuler les enjeux m\u00e9tier, techniques et de delivery.",
+    "challenge": "Plusieurs \u00e9quipes contribuaient au m\u00eame programme sans r\u00e9f\u00e9rentiel commun ni hi\u00e9rarchie explicite des d\u00e9cisions.",
+    "solution": "ACB6 a structur\u00e9 les principes directeurs, les d\u00e9pendances et les points de contr\u00f4le n\u00e9cessaires \u00e0 une ex\u00e9cution plus fiable.",
+    "results": "Le programme a gagn\u00e9 en coh\u00e9rence, en visibilit\u00e9 et en capacit\u00e9 d'ex\u00e9cution progressive.",
+    "featured": false,
+    "published": true,
+    "publishedAt": "2026-01-28",
+    "seoTitle": "Cadre d'architecture transverse | ACB6",
+    "seoDescription": "R\u00e9alisation ACB6 d\u00e9di\u00e9e \u00e0 la mise en place d'un cadre d'architecture pour un programme transverse.",
+    "tags": [
+      "gouvernance",
+      "architecture",
+      "programme"
+    ]
+  }
+]

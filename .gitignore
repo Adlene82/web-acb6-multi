@@ -1,0 +1,10 @@
+.vercel
+.next
+node_modules
+.env*.local
+*.bak
+*.bak-*
+*.real-dispatch-*
+*.sanity-qa-*
+*.truthy-dispatch-*
+*.tsbuildinfo

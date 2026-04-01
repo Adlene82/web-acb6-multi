@@ -1,0 +1,245 @@
+[
+  {
+    "_id": "siteSettings-ru",
+    "_type": "siteSettings",
+    "locale": "ru",
+    "siteName": "ACB6",
+    "legalName": "ACB6",
+    "brandBaseline": "Консалтинг и архитектура ИС",
+    "brandDescription": "Консалтинговая практика и архитектура ИС для решений, которые остаются понятными, управляемыми и устойчивыми.",
+    "primaryNavigation": [
+      { "_type": "link", "label": "Главная", "href": "/", "variant": "text", "openInNewTab": false },
+      { "_type": "link", "label": "Экспертиза", "href": "/expertises", "variant": "text", "openInNewTab": false },
+      { "_type": "link", "label": "Проекты", "href": "/realisations", "variant": "text", "openInNewTab": false },
+      { "_type": "link", "label": "О нас", "href": "/a-propos", "variant": "text", "openInNewTab": false },
+      { "_type": "link", "label": "Контакты", "href": "/contact", "variant": "primary", "openInNewTab": false }
+    ],
+    "footerNavigation": [
+      { "_type": "link", "label": "Главная", "href": "/", "variant": "text", "openInNewTab": false },
+      { "_type": "link", "label": "Экспертиза", "href": "/expertises", "variant": "text", "openInNewTab": false },
+      { "_type": "link", "label": "Проекты", "href": "/realisations", "variant": "text", "openInNewTab": false },
+      { "_type": "link", "label": "О нас", "href": "/a-propos", "variant": "text", "openInNewTab": false },
+      { "_type": "link", "label": "Контакты", "href": "/contact", "variant": "text", "openInNewTab": false }
+    ],
+    "contactMethods": [
+      { "_type": "contactMethod", "label": "Email", "value": "contact@acb6.fr", "href": "mailto:contact@acb6.fr" },
+      { "_type": "contactMethod", "label": "Телефон", "value": "+33 (0)0 00 00 00 00", "href": "tel:+33000000000" }
+    ],
+    "locations": ["Франция — миссии по консалтингу и архитектуре ИС"],
+    "legalNoticeLabel": "Юридическая информация подключается.",
+    "legalNoticeUrl": "",
+    "themeSettings": {
+      "_type": "themeSettings",
+      "brandTagline": "Консалтинг и архитектура ИС",
+      "primaryAccent": "#1E5EFF",
+      "secondaryAccent": "#0E1625",
+      "heroTone": "light-premium",
+      "buttonStyle": "solid",
+      "notes": "Границы редактирования: контент, навигация, акценты и бренд без свободного доступа к CSS."
+    }
+  },
+  {
+    "_id": "homePage-ru",
+    "_type": "homePage",
+    "locale": "ru",
+    "eyebrow": "Консалтинг и архитектура ИС",
+    "title": "Дайте вашей цифровой трансформации более понятную, убедительную и устойчивую основу.",
+    "lead": "ACB6 помогает организациям структурировать решения, согласовывать бизнес и архитектуру, а также продвигать сложные среды без потери контроля.",
+    "primaryCta": {
+      "_type": "cta",
+      "link": { "_type": "link", "label": "Связаться с нами", "href": "/contact", "variant": "primary", "openInNewTab": false }
+    },
+    "secondaryCta": {
+      "_type": "cta",
+      "link": { "_type": "link", "label": "Смотреть проекты", "href": "/realisations", "variant": "secondary", "openInNewTab": false }
+    },
+    "heroStats": [
+      { "_type": "stat", "value": "B2B", "label": "Консалтинг и архитектура ИС с фокусом на результат" },
+      { "_type": "stat", "value": "Mobile-first", "label": "Комфортное чтение на любом экране" },
+      { "_type": "stat", "value": "Редактируемо", "label": "Структура готова для расширения проектов" }
+    ],
+    "heroPanelHighlights": ["Понятная архитектура", "Структурированные решения", "Устойчивое исполнение"],
+    "expertisesTitle": "Структурированная экспертиза, которая помогает трансформации не терять читаемость.",
+    "expertisesIntro": "Каждое направление подается с ясным углом, понятными выгодами и уровнем сдержанности, соответствующим премиальному позиционированию.",
+    "contextsTitle": "Убедительная подача для требовательных бизнес- и технических контекстов.",
+    "contextsIntro": "ACB6 работает там, где читаемость, координация и качество архитектуры определяют успех проектов.",
+    "sectors": ["Энергетика и Utilities", "Сложные системы", "Сквозная трансформация", "Прикладная архитектура", "Бизнес-инструменты"],
+    "methodTitle": "Простой путь: сформулировать, спроектировать, трансформировать.",
+    "methodIntro": "Сайт отражает ту же дисциплину, что и проектный подход: минимум эффектов, сильная иерархия и сообщения, которые легко просматривать.",
+    "proofPoints": [
+      "Сдержанный, структурированный и результат-ориентированный подход",
+      "Опыт в сложных и требовательных контекстах",
+      "Редакционная иерархия, рассчитанная на B2B-доверие",
+      "Коллекция проектов, готовая к подключению к CMS"
+    ],
+    "proofStripTitle": "Фронтенд-основа, созданная для читаемости, доверия и перехода на более высокий уровень.",
+    "proofStripMetrics": [
+      { "_type": "stat", "value": "5", "label": "структурированных страниц" },
+      { "_type": "stat", "value": "1", "label": "редактируемая коллекция проектов" },
+      { "_type": "stat", "value": "100%", "label": "согласованность с theme tokens" }
+    ],
+    "finalCta": {
+      "_type": "cta",
+      "eyebrow": "Связь",
+      "helperText": "Простой, понятный и сразу полезный контакт.",
+      "link": { "_type": "link", "label": "Обсудить проект", "href": "/contact", "variant": "primary", "openInNewTab": false }
+    }
+  },
+  {
+    "_id": "aboutPage-ru",
+    "_type": "aboutPage",
+    "locale": "ru",
+    "eyebrow": "О нас",
+    "title": "ACB6 сопровождает трансформации, которым нужны метод, читаемость и контроль.",
+    "lead": "Страница «О нас» усиливает доверие к бренду без холодного или шаблонного корпоративного тона.",
+    "missionTitle": "Миссия",
+    "missionText": "Согласовывать бизнес, архитектуру и delivery, чтобы формировать более полезные, понятные и устойчивые траектории трансформации.",
+    "postureTitle": "Подход",
+    "postureText": "Ставить на точность, объяснимость и доказательства через проект, а не на поверхностный эффект или размытые обещания.",
+    "values": ["Понятные решения и зоны ответственности", "Устойчивая архитектура прежде сложности", "Надежная B2B-подача без лишних обещаний", "Читаемость на мобильных так же важна, как на desktop"],
+    "credibilityPoints": ["Коммуникация, основанная на доказанных проектах, а не на общих обещаниях.", "Редакционная иерархия, рассчитанная на сложные бизнес- и технические контексты."],
+    "finalCta": {
+      "_type": "cta",
+      "eyebrow": "Связь",
+      "helperText": "Полезный разговор для фиксации контекста, вопросов и следующих шагов.",
+      "link": { "_type": "link", "label": "Обсудить вашу траекторию", "href": "/contact", "variant": "primary", "openInNewTab": false }
+    }
+  },
+  {
+    "_id": "contactPage-ru",
+    "_type": "contactPage",
+    "locale": "ru",
+    "eyebrow": "Контакты",
+    "title": "Давайте обсудим ваш проект, траекторию ИС или задачу модернизации.",
+    "lead": "Простая и понятная страница контактов, готовая к подключению к вашему инструменту сбора заявок или CRM.",
+    "sectionTitle": "Прямой вход без лишних шагов и трения.",
+    "sectionIntro": "Редактируемый контент теперь управляется через Sanity, а форма готова к последующему техническому подключению.",
+    "contactMethods": [
+      { "_type": "contactMethod", "label": "Email", "value": "contact@acb6.fr", "href": "mailto:contact@acb6.fr" },
+      { "_type": "contactMethod", "label": "Телефон", "value": "+33 (0)0 00 00 00 00", "href": "tel:+33000000000" }
+    ],
+    "reassuranceEyebrow": "Подтверждение",
+    "reassuranceText": "Форма готова к техническому подключению. Подписи видимы, поля расположены в одну колонку на мобильных и интерактивные зоны отвечают базовым требованиям доступности.",
+    "formIntro": "Опишите контекст, задачи и горизонт принятия решения. Структура формы остается намеренно простой, чтобы упростить последующую интеграцию."
+  },
+  {
+    "_id": "expertise-transformation-digitale-ru",
+    "_type": "expertise",
+    "locale": "ru",
+    "title": "Цифровая трансформация",
+    "slug": { "_type": "slug", "current": "transformation-digitale" },
+    "summary": "Структурировать, приоритизировать и безопасно вести программы трансформации с понятной для бизнеса логикой.",
+    "points": ["Согласование бизнеса и ИС", "Практичная дорожная карта", "Документированные ключевые решения"],
+    "featuredOnHome": true,
+    "order": 1
+  },
+  {
+    "_id": "expertise-architecture-fonctionnelle-ru",
+    "_type": "expertise",
+    "locale": "ru",
+    "title": "Функциональная архитектура",
+    "slug": { "_type": "slug", "current": "architecture-fonctionnelle" },
+    "summary": "Прояснять потоки, роли и зависимости, чтобы траектория изменений оставалась читаемой.",
+    "points": ["Целевая карта", "Пути и процессы", "Сквозной взгляд"],
+    "featuredOnHome": true,
+    "order": 2
+  },
+  {
+    "_id": "expertise-architecture-applicative-ru",
+    "_type": "expertise",
+    "locale": "ru",
+    "title": "Прикладная архитектура",
+    "slug": { "_type": "slug", "current": "architecture-applicative" },
+    "summary": "Строить согласованные, поддерживаемые и эволюционирующие прикладные основы.",
+    "points": ["Урбанизация", "Интероперабельность", "Контролируемое разбиение"],
+    "featuredOnHome": true,
+    "order": 3
+  },
+  {
+    "_id": "expertise-architecture-technique-infrastructure-ru",
+    "_type": "expertise",
+    "locale": "ru",
+    "title": "Техническая архитектура и инфраструктура",
+    "slug": { "_type": "slug", "current": "architecture-technique-infrastructure" },
+    "summary": "Защищать технические решения, которые поддерживают производительность, устойчивость и эксплуатацию.",
+    "points": ["Технический фундамент", "Устойчивость", "Производительность и управление"],
+    "featuredOnHome": true,
+    "order": 4
+  },
+  {
+    "_id": "expertise-outils-collaboratifs-web-mobile-ru",
+    "_type": "expertise",
+    "locale": "ru",
+    "title": "Коллаборативные, web и mobile-инструменты",
+    "slug": { "_type": "slug", "current": "outils-collaboratifs-web-mobile" },
+    "summary": "Помогать появляться полезным, понятным и действительно принимаемым решениям для команд и бизнеса.",
+    "points": ["Бизнес-порталы", "Вспомогательные приложения", "Опыт, ориентированный на сценарии использования"],
+    "featuredOnHome": true,
+    "order": 5
+  },
+  {
+    "_id": "expertise-energie-utilities-ru",
+    "_type": "expertise",
+    "locale": "ru",
+    "title": "Энергетика и Utilities",
+    "slug": { "_type": "slug", "current": "energie-utilities" },
+    "summary": "Использовать опыт работы в сложных и сильно ограниченных средах.",
+    "points": ["Критичные системы", "Регуляторный контекст", "Долгосрочное видение"],
+    "featuredOnHome": true,
+    "order": 6
+  },
+  {
+    "_id": "realisation-pilotage-si-industrialise-ru",
+    "_type": "realisations",
+    "locale": "ru",
+    "slug": { "_type": "slug", "current": "pilotage-si-industrialise" },
+    "title": "Индустриализированное управление ИС для многоплощадочного оператора",
+    "sector": "Энергетика и Utilities",
+    "summary": "Структурирование траектории ИС для улучшения читаемости приоритетов и координации команд.",
+    "challenge": "Организация сталкивалась с плохо видимыми зависимостями приложений, размытой системой управления и растущей сложностью принятия решений по эволюции.",
+    "solution": "ACB6 зафиксировал целевую карту, определил архитектурные принципы и внедрил единый контур управления между бизнесом, проектами и эксплуатацией.",
+    "results": "Решения стали приниматься быстрее, инициативы — лучше выстроены по этапам, а ценные темы — проще защищать.",
+    "featured": true,
+    "published": true,
+    "publishedAt": "2026-03-01",
+    "seoTitle": "Индустриализированное управление ИС | ACB6",
+    "seoDescription": "Пример проекта ACB6 по управлению ИС и структурированию траектории трансформации.",
+    "tags": ["архитектура", "управление", "трансформация"]
+  },
+  {
+    "_id": "realisation-modernisation-portail-metier-ru",
+    "_type": "realisations",
+    "locale": "ru",
+    "slug": { "_type": "slug", "current": "modernisation-portail-metier" },
+    "title": "Модернизация бизнес-портала с активным полевым использованием",
+    "sector": "Сложные сервисы",
+    "summary": "Переосмысление прикладной основы и сервисного опыта для снижения операционной трения.",
+    "challenge": "Существующий портал тормозил принятие, порождал обходные сценарии и делал ключевые маршруты слишком дорогими.",
+    "solution": "ACB6 согласовал бизнес-потребности, прикладную структуру и технические требования, чтобы создать устойчивую рамку модернизации.",
+    "results": "Команда получила более понятную основу, легче развиваемую и лучше подходящую для приоритетных сценариев.",
+    "featured": true,
+    "published": true,
+    "publishedAt": "2026-02-15",
+    "seoTitle": "Модернизация бизнес-портала | ACB6",
+    "seoDescription": "Проект ACB6 по модернизации бизнес-портала в среде сложных сервисов.",
+    "tags": ["web", "портал", "adoption"]
+  },
+  {
+    "_id": "realisation-cadre-architecture-programme-ru",
+    "_type": "realisations",
+    "locale": "ru",
+    "slug": { "_type": "slug", "current": "cadre-architecture-programme" },
+    "title": "Архитектурная рамка для сквозной программы трансформации",
+    "sector": "Консалтинг и архитектура ИС",
+    "summary": "Введение рамки решений для согласования бизнес-, технических и delivery-вопросов.",
+    "challenge": "Несколько команд работали в одной программе без общего референса и без явной иерархии решений.",
+    "solution": "ACB6 структурировал основные принципы, зависимости и контрольные точки, необходимые для более надёжного исполнения.",
+    "results": "Программа стала более согласованной, прозрачной и способной идти поэтапно.",
+    "featured": false,
+    "published": true,
+    "publishedAt": "2026-01-28",
+    "seoTitle": "Сквозная архитектурная рамка | ACB6",
+    "seoDescription": "Проект ACB6 по внедрению архитектурной рамки для сквозной программы.",
+    "tags": ["управление", "архитектура", "программа"]
+  }
+]

@@ -1,0 +1,75 @@
+{
+  "site": {
+    "navigation": "Navigation principale",
+    "footerNavigation": "Navigation",
+    "contact": "Contact",
+    "backHome": "Retour à l'accueil",
+    "languageLabel": "Langue",
+    "languages": {
+      "fr": "FR",
+      "ru": "RU"
+    }
+  },
+  "common": {
+    "realisations": "Réalisations",
+    "expertises": "Expertises",
+    "about": "À propos",
+    "contact": "Contact",
+    "seeAllRealisations": "Voir toutes les réalisations",
+    "seeProject": "Voir le projet",
+    "send": "Échanger sur votre projet"
+  },
+  "home": {
+    "expertisesEyebrow": "Expertises",
+    "contextsEyebrow": "Contextes",
+    "methodEyebrow": "Méthode",
+    "projectsEyebrow": "Réalisations",
+    "proofEyebrow": "Pourquoi ACB6",
+    "ctaEyebrow": "Échange"
+  },
+  "pages": {
+    "realisations": {
+      "eyebrow": "Collection",
+      "title": "Une collection de réalisations pensée pour être éditable, crédible et durable.",
+      "lead": "Sanity pilote les contenus éditables, avec un modèle réplicable : titre, secteur, enjeu, réponse, résultat et visuel principal.",
+      "projectListTitle": "Projets publiés",
+      "projectListIntro": "Chaque carte conserve une densité cohérente et peut être alimentée par Sanity ; un fallback local sert uniquement de filet de migration.",
+      "highlight1": "Ajouter ou modifier une fiche sans toucher à la mise en page.",
+      "highlight2": "Visuels cadrés avec un ratio cohérent pour garder une grille propre.",
+      "highlight3": "Enjeu, réponse et bénéfice lisibles en quelques secondes.",
+      "sanityActive": "Sanity actif",
+      "sanityInactive": "Sanity non connecté"
+    },
+    "projectDetail": {
+      "eyebrow": "Enjeu",
+      "title": "Un modèle de fiche projet simple, crédible et réutilisable.",
+      "context": "Contexte",
+      "response": "Réponse ACB6",
+      "result": "Résultat",
+      "sanityContent": "Contenu éditable dans Sanity",
+      "fallback": "Fallback local temporaire"
+    },
+    "about": {
+      "positioningEyebrow": "Positionnement",
+      "positioningTitle": "Une entreprise orientée conseil, architecture et exécution durable.",
+      "positioningIntro": "Le contenu se pilote désormais depuis Sanity, avec un fallback local uniquement utilisé comme filet de sécurité.",
+      "valuesEyebrow": "Valeurs",
+      "valuesTitle": "Des principes simples pour inspirer confiance et soutenir la durée.",
+      "credibilityEyebrow": "Crédibilité",
+      "credibilityTitle": "Des repères concrets pour renforcer la confiance."
+    },
+    "contact": {
+      "eyebrow": "Prise de contact",
+      "title": "Un point d'entrée direct, clair et sans friction.",
+      "intro": "Le contenu éditorial se pilote désormais depuis Sanity, tout en gardant le formulaire prêt pour un raccordement technique ultérieur.",
+      "writeUs": "Écrivez-nous",
+      "coordinates": "Coordonnées",
+      "reassurance": "Réassurance"
+    },
+    "expertises": {
+      "eyebrow": "Offre",
+      "title": "Piliers d'intervention",
+      "intro": "Chaque pilier peut être enrichi ensuite par du contenu éditorial, des cas d'usage et des preuves métier."
+    }
+  }
+}

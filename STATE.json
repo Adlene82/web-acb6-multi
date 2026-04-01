@@ -1,0 +1,52 @@
+{
+  "client_id": "acb6",
+  "project_id": "web-acb6-multi",
+  "project_root": "/home/adlene/.openclaw/shared/webfactory-projects/acb6/web-acb6-multi",
+  "mode": "PROD_AUTONOME",
+  "phase": "qa",
+  "current_owner": "lead-developer",
+  "next_action": "Vérifier la matrice publique FR/RU et préparer la publication GitHub/Vercel du projet web-acb6-multi.",
+  "source_url": "https://www.acb6.fr",
+  "reference_url": "https://www.apple.com/fr/",
+  "target_stack": "nextjs",
+  "ui_foundation": "shadcn/ui + lucide-react + semantic tokens",
+  "created_at": "20260401T164300Z",
+  "updated_at": "20260401T165900Z",
+  "tasks": {
+    "brief": "done",
+    "audit": "done",
+    "architecture": "in_progress",
+    "design": "done",
+    "frontend": "done",
+    "backend": "done",
+    "qa": "in_progress",
+    "release": "queued"
+  },
+  "delegations": {},
+  "blockers": [],
+  "artifacts": [
+    "00_source/SOURCE.md",
+    "10_brief/BRIEF.md",
+    "10_brief/UI_DIRECTION.md",
+    "20_architecture/ARCHITECTURE.md",
+    "20_architecture/I18N_ARCHITECTURE.md",
+    "30_design/DESIGN_SYSTEM.md",
+    "30_design/THEME.json",
+    "40_frontend/UI_IMPLEMENTATION_CHECKLIST.md",
+    "40_frontend/I18N_IMPLEMENTATION_CHECKLIST.md",
+    "60_qa/UI_FOUNDATION_CHECKLIST.md",
+    "60_qa/I18N_QA_CHECKLIST.md",
+    "80_handoff/lead-developer.md"
+  ],
+  "i18n": {
+    "enabled": true,
+    "base_locale": "fr",
+    "enabled_locales": [
+      "fr",
+      "ru"
+    ],
+    "preview_gate": "base_locale_first",
+    "translation_backend": "sanity",
+    "translation_review_required": true
+  }
+}

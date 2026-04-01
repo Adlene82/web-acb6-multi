@@ -1,0 +1,37 @@
+const homePageType = {
+  name: 'homePage',
+  title: 'Page Accueil',
+  type: 'document',
+  groups: [
+    { name: 'identity', title: 'Identité' },
+    { name: 'hero', title: 'Hero' },
+    { name: 'sections', title: 'Sections' },
+    { name: 'proof', title: 'Preuves' },
+    { name: 'seo', title: 'SEO' },
+  ],
+  fields: [
+    { name: 'locale', title: 'Locale', type: 'string', options: { list: [{ title: 'FR', value: 'fr' }, { title: 'RU', value: 'ru' }] }, group: 'identity', validation: (Rule) => Rule.required() },
+    { name: 'eyebrow', title: 'Eyebrow hero', type: 'string', group: 'hero' },
+    { name: 'title', title: 'Titre hero', type: 'string', group: 'hero', validation: (Rule) => Rule.required() },
+    { name: 'lead', title: 'Texte hero', type: 'text', rows: 4, group: 'hero' },
+    { name: 'primaryCta', title: 'CTA principal', type: 'cta', group: 'hero' },
+    { name: 'secondaryCta', title: 'CTA secondaire', type: 'cta', group: 'hero' },
+    { name: 'heroStats', title: 'Stats hero', type: 'array', of: [{ type: 'stat' }], group: 'hero' },
+    { name: 'heroPanelHighlights', title: 'Highlights hero', type: 'array', of: [{ type: 'string' }], group: 'hero' },
+    { name: 'expertisesTitle', title: 'Titre section expertises', type: 'string', group: 'sections' },
+    { name: 'expertisesIntro', title: 'Intro expertises', type: 'text', rows: 3, group: 'sections' },
+    { name: 'contextsTitle', title: 'Titre section contextes', type: 'string', group: 'sections' },
+    { name: 'contextsIntro', title: 'Intro contextes', type: 'text', rows: 3, group: 'sections' },
+    { name: 'sectors', title: 'Secteurs affiches', type: 'array', of: [{ type: 'string' }], group: 'sections' },
+    { name: 'methodTitle', title: 'Titre section methode', type: 'string', group: 'sections' },
+    { name: 'methodIntro', title: 'Intro methode', type: 'text', rows: 3, group: 'sections' },
+    { name: 'proofPoints', title: 'Points de preuve', type: 'array', of: [{ type: 'string' }], group: 'proof' },
+    { name: 'proofStripTitle', title: 'Titre bandeau preuve', type: 'string', group: 'proof' },
+    { name: 'proofStripMetrics', title: 'Metriques bandeau preuve', type: 'array', of: [{ type: 'stat' }], group: 'proof' },
+    { name: 'finalCta', title: 'CTA final', type: 'cta', group: 'proof' },
+    { name: 'seo', title: 'SEO', type: 'seo', group: 'seo' },
+  ],
+  preview: { select: { locale: 'locale' }, prepare: ({ locale }) => ({ title: 'Accueil', subtitle: locale ? `Singleton logique · ${locale.toUpperCase()}` : 'Singleton logique' }) },
+};
+
+module.exports = { homePageType };
