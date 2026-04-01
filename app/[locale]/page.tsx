@@ -12,13 +12,14 @@ export default async function HomePage({ params }: Readonly<{ params: Promise<{ 
 
   if (!isLocale(locale)) notFound();
 
+  const currentLocale = locale as Locale;
   const [homePage, expertises, projects, tPages, tCommon, tHome] = await Promise.all([
-    getHomePageContent(locale as Locale),
-    getExpertiseList(locale as Locale),
-    getRealisationList(locale as Locale),
-    getTranslations({ locale: locale as Locale, namespace: 'pages' }),
-    getTranslations({ locale: locale as Locale, namespace: 'common' }),
-    getTranslations({ locale: locale as Locale, namespace: 'home' }),
+    getHomePageContent(currentLocale),
+    getExpertiseList(currentLocale),
+    getRealisationList(currentLocale),
+    getTranslations({ locale: currentLocale, namespace: 'pages' }),
+    getTranslations({ locale: currentLocale, namespace: 'common' }),
+    getTranslations({ locale: currentLocale, namespace: 'home' }),
   ]);
 
   const featuredProjects = projects.filter((project) => project.featured);
@@ -26,24 +27,26 @@ export default async function HomePage({ params }: Readonly<{ params: Promise<{ 
 
   return (
     <>
-      <HomeHero content={homePage} />
+      <HomeHero content={homePage} locale={currentLocale} />
       <ExpertiseGridSection eyebrow={tCommon('expertises')} title={homePage.expertisesTitle} intro={homePage.expertisesIntro} items={featuredExpertises} />
-      <SectorsSection eyebrow={tHome('contextsEyebrow')} title={homePage.contextsTitle} intro={homePage.contextsIntro} sectors={homePage.sectors} proofPoints={homePage.proofPoints} />
-      <MethodSection eyebrow={tHome('methodEyebrow')} title={homePage.methodTitle} intro={homePage.methodIntro} />
+      <SectorsSection locale={currentLocale} eyebrow={tHome('contextsEyebrow')} title={homePage.contextsTitle} intro={homePage.contextsIntro} sectors={homePage.sectors} proofPoints={homePage.proofPoints} />
+      <MethodSection locale={currentLocale} eyebrow={tHome('methodEyebrow')} title={homePage.methodTitle} intro={homePage.methodIntro} />
       <ProjectsSection
+        locale={currentLocale}
         eyebrow={tHome('projectsEyebrow')}
         title={tPages('realisations.projectListTitle')}
         intro={tPages('realisations.projectListIntro')}
         projects={featuredProjects}
         seeAllLabel={tCommon('seeAllRealisations')}
         projectLabel={tCommon('seeProject')}
-        seeAllHref={localizePath('/realisations', locale as Locale)}
+        seeAllHref={localizePath('/realisations', currentLocale)}
       />
       <ProofStrip eyebrow={tHome('proofEyebrow')} title={homePage.proofStripTitle} metrics={homePage.proofStripMetrics} />
       <CtaBand
+        locale={currentLocale}
         eyebrow={tHome('ctaEyebrow')}
-        primaryLink={{ ...homePage.finalCta.link, href: localizePath(homePage.finalCta.link.href, locale as Locale) }}
-        secondaryLink={{ label: tCommon('expertises'), href: localizePath('/expertises', locale as Locale), variant: 'ghost' }}
+        primaryLink={{ ...homePage.finalCta.link, href: localizePath(homePage.finalCta.link.href, currentLocale) }}
+        secondaryLink={{ label: tCommon('expertises'), href: localizePath('/expertises', currentLocale), variant: 'ghost' }}
         helperText={homePage.finalCta.helperText}
       />
     </>

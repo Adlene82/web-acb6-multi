@@ -41,11 +41,12 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
 
   if (!isLocale(locale)) notFound();
 
+  const currentLocale = locale as Locale;
   const [project, sanity, tPages, tCommon] = await Promise.all([
-    getRealisationBySlug(locale as Locale, slug),
+    getRealisationBySlug(currentLocale, slug),
     getSanityConfigSummary(),
-    getTranslations({ locale: locale as Locale, namespace: 'pages' }),
-    getTranslations({ locale: locale as Locale, namespace: 'common' }),
+    getTranslations({ locale: currentLocale, namespace: 'pages' }),
+    getTranslations({ locale: currentLocale, namespace: 'common' }),
   ]);
 
   const coverImageUrl = getRealisationImage(project?.coverImage);
@@ -89,7 +90,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         </div>
       </Section>
 
-      <CtaBand primaryLink={{ label: tCommon('contact'), href: localizePath('/contact', locale as Locale), variant: 'primary' }} secondaryLink={{ label: tCommon('expertises'), href: localizePath('/expertises', locale as Locale), variant: 'ghost' }} />
+      <CtaBand locale={currentLocale} primaryLink={{ label: tCommon('contact'), href: localizePath('/contact', currentLocale), variant: 'primary' }} secondaryLink={{ label: tCommon('expertises'), href: localizePath('/expertises', currentLocale), variant: 'ghost' }} />
     </>
   );
 }

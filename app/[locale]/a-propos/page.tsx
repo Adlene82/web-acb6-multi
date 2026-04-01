@@ -12,10 +12,11 @@ export default async function AboutPage({ params }: Readonly<{ params: Promise<{
 
   if (!isLocale(locale)) notFound();
 
+  const currentLocale = locale as Locale;
   const [page, tPages, tCommon] = await Promise.all([
-    getAboutPageContent(locale as Locale),
-    getTranslations({ locale: locale as Locale, namespace: 'pages' }),
-    getTranslations({ locale: locale as Locale, namespace: 'common' }),
+    getAboutPageContent(currentLocale),
+    getTranslations({ locale: currentLocale, namespace: 'pages' }),
+    getTranslations({ locale: currentLocale, namespace: 'common' }),
   ]);
 
   return (
@@ -60,22 +61,23 @@ export default async function AboutPage({ params }: Readonly<{ params: Promise<{
       ) : null}
 
       <ProofStrip
-        eyebrow={locale === 'ru' ? 'Почему ACB6' : 'Pourquoi ACB6'}
-        title={locale === 'ru'
-          ? 'Фронтенд-основа, созданная для читаемости, доверия и роста.'
-          : 'Une base front-end pensée pour la lisibilité, la crédibilité et la montée en gamme.'}
-        metrics={locale === 'ru'
+        eyebrow={currentLocale === 'ru' ? '\u041f\u043e\u0447\u0435\u043c\u0443 ACB6' : 'Pourquoi ACB6'}
+        title={currentLocale === 'ru'
+          ? '\u0424\u0440\u043e\u043d\u0442\u0435\u043d\u0434-\u043e\u0441\u043d\u043e\u0432\u0430, \u0441\u043e\u0437\u0434\u0430\u043d\u043d\u0430\u044f \u0434\u043b\u044f \u0447\u0438\u0442\u0430\u0435\u043c\u043e\u0441\u0442\u0438, \u0434\u043e\u0432\u0435\u0440\u0438\u044f \u0438 \u0440\u043e\u0441\u0442\u0430.'
+          : 'Une base front-end pens\u00e9e pour la lisibilit\u00e9, la cr\u00e9dibilit\u00e9 et la mont\u00e9e en gamme.'}
+        metrics={currentLocale === 'ru'
           ? [
-              { value: '5', label: 'структурированных страниц' },
-              { value: '1', label: 'редактируемая коллекция проектов' },
-              { value: '100%', label: 'согласованность с theme tokens' },
+              { value: '5', label: '\u0441\u0442\u0440\u0443\u043a\u0442\u0443\u0440\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u0441\u0442\u0440\u0430\u043d\u0438\u0446' },
+              { value: '1', label: '\u0440\u0435\u0434\u0430\u043a\u0442\u0438\u0440\u0443\u0435\u043c\u0430\u044f \u043a\u043e\u043b\u043b\u0435\u043a\u0446\u0438\u044f \u043f\u0440\u043e\u0435\u043a\u0442\u043e\u0432' },
+              { value: '100%', label: '\u0441\u043e\u0433\u043b\u0430\u0441\u043e\u0432\u0430\u043d\u043d\u043e\u0441\u0442\u044c \u0441 theme tokens' },
             ]
           : undefined}
       />
       <CtaBand
+        locale={currentLocale}
         eyebrow={tCommon('contact')}
-        primaryLink={{ label: page.finalCta.link.label, href: localizePath('/contact', locale as Locale), variant: 'primary' }}
-        secondaryLink={{ label: tCommon('expertises'), href: localizePath('/expertises', locale as Locale), variant: 'ghost' }}
+        primaryLink={{ label: page.finalCta.link.label, href: localizePath('/contact', currentLocale), variant: 'primary' }}
+        secondaryLink={{ label: tCommon('expertises'), href: localizePath('/expertises', currentLocale), variant: 'ghost' }}
         helperText={page.finalCta.helperText}
       />
     </>

@@ -1,31 +1,21 @@
 # LAUNCH_PREP - ACB6
 
 ## Objectif
-Valider et exploiter une URL publique isolee pour `web-acb6-multi` sans reutiliser les conteneurs d un autre projet.
+Valider une publication WebFactory seulement quand les deux surfaces canoniques du projet sont conformes: le site public et l administration `/studio`.
 
 ## Etat actuel
-- Build valide.
-- QA locale precedente validee en `GO`.
-- Repo GitHub dedie cree: `https://github.com/Adlene82/web-acb6-multi`.
-- Projet Vercel dedie cree et lie: `web-acb6-multi`.
-- URL publique dediee accessible: `https://web-acb6-multi.vercel.app`.
-- URL technique protegee: `https://web-acb6-multi-1m2bsfj4n-adlene82s-projects.vercel.app`.
-- L URL publique dediee a ete revalidee en desktop/mobile.
+- Build local precedemment valide, mais release publique reouverte.
+- URL site publique observee: `https://web-acb6-multi.vercel.app`.
+- URL admin cible: `https://web-acb6-multi.vercel.app/studio`.
+- URL RU cible: `https://web-acb6-multi.vercel.app/ru`.
+- Blocage actif 1: melange FR/RU sur la version publique.
+- Blocage actif 2: validation admin `/studio` absente et page publique constatee vide.
+- Blocage actif 3: branche locale `ahead` de `origin/main` au moment de la validation annoncee.
 
 ## Ce qu il faut obtenir
-- Une validation QA sur l URL publique isolee.
-- Une reprise du flux de versioning sur le repo GitHub dedie.
-- Une garantie durable qu un `project_id` n ecrase plus un autre projet du meme client.
-
-## Preparation recommandee
-1. Verifier l URL publique dediee en desktop/mobile.
-2. Noter tout ecart entre la validation locale precedente et l URL Vercel dediee.
-3. Utiliser desormais uniquement `Adlene82/web-acb6-multi` et le projet Vercel `web-acb6-multi` pour ce projet.
-4. Ne plus reutiliser `refonte-site-web-acb6` pour `web-acb6-multi`.
+- GitHub synchronise avant toute nouvelle validation Vercel.
+- Une QA distincte sur `site FR`, `site RU` et `admin /studio`.
+- Une release rouverte seulement quand la matrice complete est verte.
 
 ## Statut de lancement
-- URL publique accessible obtenue: `https://web-acb6-multi.vercel.app`.
-- Deploiement technique protege conserve: `https://web-acb6-multi-1m2bsfj4n-adlene82s-projects.vercel.app`.
-- Blocage actif: aucun blocage technique de publication sur le nouveau conteneur.
-- Validation complémentaire: desktop/mobile recontrôlés sur l URL publique isolee.
-- Prochaine etape: retour client ou nouvelle demande de versioning sur le repo GitHub dedie.
+- Lancement bloque tant que les trois conditions ci dessus ne sont pas satisfaites.

@@ -15,11 +15,12 @@ export default async function RealisationsPage({ params }: Readonly<{ params: Pr
 
   if (!isLocale(locale)) notFound();
 
+  const currentLocale = locale as Locale;
   const [projects, sanity, tPages, tCommon] = await Promise.all([
-    getRealisationList(locale as Locale),
+    getRealisationList(currentLocale),
     getSanityConfigSummary(),
-    getTranslations({ locale: locale as Locale, namespace: 'pages' }),
-    getTranslations({ locale: locale as Locale, namespace: 'common' }),
+    getTranslations({ locale: currentLocale, namespace: 'pages' }),
+    getTranslations({ locale: currentLocale, namespace: 'common' }),
   ]);
 
   return (
@@ -38,16 +39,16 @@ export default async function RealisationsPage({ params }: Readonly<{ params: Pr
                 <span>{tPages('realisations.highlight1')}</span>
               </Card>
               <Card className="hero-stat realisations-highlights__item">
-                <strong>{locale === 'ru' ? 'Фотографии' : 'Photos'}</strong>
+                <strong>{currentLocale === 'ru' ? '\u0424\u043e\u0442\u043e\u0433\u0440\u0430\u0444\u0438\u0438' : 'Photos'}</strong>
                 <span>{tPages('realisations.highlight2')}</span>
               </Card>
               <Card className="hero-stat realisations-highlights__item">
-                <strong>{locale === 'ru' ? 'Описания' : 'Descriptions'}</strong>
+                <strong>{currentLocale === 'ru' ? '\u041e\u043f\u0438\u0441\u0430\u043d\u0438\u044f' : 'Descriptions'}</strong>
                 <span>{tPages('realisations.highlight3')}</span>
               </Card>
               <Card className="hero-stat realisations-highlights__item">
                 <strong>{sanity.enabled ? tPages('realisations.sanityActive') : tPages('realisations.sanityInactive')}</strong>
-                <span>{sanity.enabled ? `Édition live via ${sanity.dataset}` : locale === 'ru' ? 'Локальный fallback виден, пока не заданы переменные окружения.' : 'Fallback local visible tant que les variables d\'environnement ne sont pas posées.'}</span>
+                <span>{sanity.enabled ? `\u00c9dition live via ${sanity.dataset}` : currentLocale === 'ru' ? '\u041b\u043e\u043a\u0430\u043b\u044c\u043d\u044b\u0439 fallback \u0432\u0438\u0434\u0435\u043d, \u043f\u043e\u043a\u0430 \u043d\u0435 \u0437\u0430\u0434\u0430\u043d\u044b \u043f\u0435\u0440\u0435\u043c\u0435\u043d\u043d\u044b\u0435 \u043e\u043a\u0440\u0443\u0436\u0435\u043d\u0438\u044f.' : "Fallback local visible tant que les variables d'environnement ne sont pas pos\u00e9es."}</span>
               </Card>
             </div>
           </div>
@@ -73,7 +74,7 @@ export default async function RealisationsPage({ params }: Readonly<{ params: Pr
                   <div className="tag-row">
                     {project.tags.map((tag) => <span key={tag} className="tag">{tag}</span>)}
                   </div>
-                  <Link href={localizePath(`/realisations/${project.slug}`, locale as Locale)} className="text-link">{tCommon('seeProject')}</Link>
+                  <Link href={localizePath(`/realisations/${project.slug}`, currentLocale)} className="text-link">{tCommon('seeProject')}</Link>
                 </div>
               </Card>
             );
@@ -81,7 +82,7 @@ export default async function RealisationsPage({ params }: Readonly<{ params: Pr
         </div>
       </Section>
 
-      <CtaBand primaryLink={{ label: tCommon('contact'), href: localizePath('/contact', locale as Locale), variant: 'primary' }} secondaryLink={{ label: tCommon('expertises'), href: localizePath('/expertises', locale as Locale), variant: 'ghost' }} />
+      <CtaBand locale={currentLocale} primaryLink={{ label: tCommon('contact'), href: localizePath('/contact', currentLocale), variant: 'primary' }} secondaryLink={{ label: tCommon('expertises'), href: localizePath('/expertises', currentLocale), variant: 'ghost' }} />
     </>
   );
 }

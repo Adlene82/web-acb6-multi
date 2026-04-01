@@ -1,32 +1,29 @@
 client_id: acb6
 project_id: web-acb6-multi
 project_root: /home/adlene/.openclaw/shared/webfactory-projects/acb6/web-acb6-multi
-task: Implementer la refonte technique ACB6 en Next.js avec multilingue FR/RU, `next-intl`, `Sanity` pour le contenu editable et une page `Réalisations` alimentable par photos et descriptions.
+task: Corriger la version livree pour supprimer les fallbacks FR sur `/ru`, localiser les liens internes et reouvrir proprement la release avec deux URLs canoniques (`site` + `admin /studio`).
 inputs:
   - /home/adlene/.openclaw/shared/webfactory-projects/acb6/web-acb6-multi/STATE.json
   - /home/adlene/.openclaw/shared/webfactory-projects/acb6/web-acb6-multi/DASHBOARD.md
   - /home/adlene/.openclaw/shared/webfactory-projects/acb6/web-acb6-multi/DECISIONS.md
-  - /home/adlene/.openclaw/shared/webfactory-projects/acb6/web-acb6-multi/10_brief/BRIEF.md
-  - /home/adlene/.openclaw/shared/webfactory-projects/acb6/web-acb6-multi/10_brief/UI_DIRECTION.md
-  - /home/adlene/.openclaw/shared/webfactory-projects/acb6/web-acb6-multi/20_architecture/ARCHITECTURE.md
-  - /home/adlene/.openclaw/shared/webfactory-projects/acb6/web-acb6-multi/20_architecture/I18N_ARCHITECTURE.md
-  - /home/adlene/.openclaw/shared/webfactory-projects/acb6/web-acb6-multi/30_design/DESIGN_SYSTEM.md
+  - /home/adlene/.openclaw/shared/webfactory-projects/acb6/web-acb6-multi/60_qa/QA_REPORT.md
+  - /home/adlene/.openclaw/shared/webfactory-projects/acb6/web-acb6-multi/70_release/RELEASE.md
+  - /home/adlene/.openclaw/shared/webfactory-projects/acb6/web-acb6-multi/90_release/PUBLIC_VALIDATION_URL.md
+  - /home/adlene/.openclaw/shared/webfactory-projects/acb6/web-acb6-multi/20_architecture/sanity-studio-access.md
 outputs:
-  - socle Next.js multilingue FR/RU en place
-  - `next-intl` pour le routing locale-aware et les libelles fixes
-  - `Sanity` branche pour le contenu editable et la page `Réalisations`
-  - frontend mobile-first compatible avec des textes FR/RU plus longs
-  - preview de test sur la langue de base puis extension RU conforme au gate projet
+  - correctif code locale-aware confirme localement
+  - preuve `skills_used:` tracee sur disque
+  - build local confirme avec code `0`
+  - handoff QA remis a jour avec la matrice `site FR` / `site RU` / `admin /studio`
 constraints:
-  - conserver `shadcn/ui + lucide-react + semantic tokens`
-  - ne pas introduire de drapeaux pour le switch de langue
-  - respecter `base_locale_first`
-  - garder `Réalisations` editable via Sanity
-  - documenter toute non-utilisation de Sanity si elle se produit
+  - charger d abord `sanity`, `nextjs-architecture`, `github`, `vercel-release`, `shared-state-discipline`
+  - ecrire explicitement `skills_used:` dans le livrable technique ou le handoff aval
+  - `/studio` reste une URL canonique en scope produit
+  - ne pas marquer la release valide tant que GitHub est `ahead` ou que le commit livre n est pas visible sur le remote
+  - tout texte et tout lien publics doivent etre coherents pour FR et RU
 definition_of_done:
-  - le site est accessible en preview sur la langue de base
-  - la base multilingue tient sans cassure de layout
-  - la page `Réalisations` est prête pour l’ajout de photos et descriptions
-  - les variables et branchements CMS sont documentes sur disque
-status: queued
-next_action: Poser la base i18n, brancher Sanity et livrer la premiere URL de test FR.
+  - le correctif applicatif est sur disque et le build local passe
+  - les deux URLs canoniques sont tracees sur disque
+  - le projet reste en `non GO` tant que GitHub n est pas synchronise et que QA n a pas revalide les trois cibles
+status: done
+next_action: synchroniser GitHub, puis transmettre a `qa-release` une matrice URL complete et verifiable.

@@ -12,11 +12,12 @@ export default async function ExpertisesPage({ params }: Readonly<{ params: Prom
 
   if (!isLocale(locale)) notFound();
 
+  const currentLocale = locale as Locale;
   const [expertises, homePage, tPages, tCommon] = await Promise.all([
-    getExpertiseList(locale as Locale),
-    getHomePageContent(locale as Locale),
-    getTranslations({ locale: locale as Locale, namespace: 'pages' }),
-    getTranslations({ locale: locale as Locale, namespace: 'common' }),
+    getExpertiseList(currentLocale),
+    getHomePageContent(currentLocale),
+    getTranslations({ locale: currentLocale, namespace: 'pages' }),
+    getTranslations({ locale: currentLocale, namespace: 'common' }),
   ]);
 
   return (
@@ -45,12 +46,13 @@ export default async function ExpertisesPage({ params }: Readonly<{ params: Prom
         </div>
       </Section>
 
-      <MethodSection eyebrow={tCommon('expertises')} title={homePage.methodTitle} intro={homePage.methodIntro} />
-      <SectorsSection eyebrow={tCommon('expertises')} title={homePage.contextsTitle} intro={homePage.contextsIntro} sectors={homePage.sectors} proofPoints={homePage.proofPoints} />
+      <MethodSection locale={currentLocale} eyebrow={tCommon('expertises')} title={homePage.methodTitle} intro={homePage.methodIntro} />
+      <SectorsSection locale={currentLocale} eyebrow={tCommon('expertises')} title={homePage.contextsTitle} intro={homePage.contextsIntro} sectors={homePage.sectors} proofPoints={homePage.proofPoints} />
       <CtaBand
+        locale={currentLocale}
         eyebrow={tCommon('contact')}
-        primaryLink={{ ...homePage.finalCta.link, href: localizePath(homePage.finalCta.link.href, locale as Locale) }}
-        secondaryLink={{ label: tCommon('seeAllRealisations'), href: localizePath('/realisations', locale as Locale), variant: 'ghost' }}
+        primaryLink={{ ...homePage.finalCta.link, href: localizePath(homePage.finalCta.link.href, currentLocale) }}
+        secondaryLink={{ label: tCommon('seeAllRealisations'), href: localizePath('/realisations', currentLocale), variant: 'ghost' }}
         helperText={homePage.finalCta.helperText}
       />
     </>

@@ -3,18 +3,36 @@
   "project_id": "web-acb6-multi",
   "project_root": "/home/adlene/.openclaw/shared/webfactory-projects/acb6/web-acb6-multi",
   "mode": "PROD_AUTONOME",
-  "phase": "release",
+  "phase": "implementation",
   "current_owner": "po",
-  "next_action": "Attendre les retours client ou une nouvelle demande de versioning.",
+  "next_action": "Commit/push le correctif local, puis relancer qa-release sur site FR, site RU et admin /studio avant toute nouvelle validation Vercel.",
   "source_url": "https://www.acb6.fr",
   "reference_url": "https://www.apple.com/fr/",
   "public_urls": [
-    "https://web-acb6-multi.vercel.app"
+    "https://web-acb6-multi.vercel.app",
+    "https://web-acb6-multi.vercel.app/studio"
+  ],
+  "validation_matrix": [
+    {
+      "label": "site_fr",
+      "url": "https://web-acb6-multi.vercel.app",
+      "status": "pending_revalidation"
+    },
+    {
+      "label": "site_ru",
+      "url": "https://web-acb6-multi.vercel.app/ru",
+      "status": "pending_revalidation"
+    },
+    {
+      "label": "admin_studio",
+      "url": "https://web-acb6-multi.vercel.app/studio",
+      "status": "pending_revalidation"
+    }
   ],
   "target_stack": "nextjs",
   "ui_foundation": "shadcn/ui + lucide-react + semantic tokens",
   "created_at": "20260401T164300Z",
-  "updated_at": "20260401T180000Z",
+  "updated_at": "20260401T183930Z",
   "tasks": {
     "brief": "done",
     "audit": "done",
@@ -22,24 +40,35 @@
     "design": "done",
     "frontend": "done",
     "backend": "done",
-    "qa": "done",
-    "release": "done"
+    "qa": "pending",
+    "release": "blocked"
   },
-  "delegations": {},
-  "blockers": [],
+  "delegations": {
+    "lead-developer": "done",
+    "qa-release": "queued"
+  },
+  "blockers": [
+    "git_sync_pending: le correctif local est passe au build mais le commit n est pas encore visible sur origin/main",
+    "qa_revalidation_pending: site FR, site RU et admin /studio doivent etre revalidees apres synchronisation GitHub"
+  ],
   "artifacts": [
     "00_source/SOURCE.md",
     "10_brief/BRIEF.md",
     "10_brief/UI_DIRECTION.md",
     "20_architecture/ARCHITECTURE.md",
     "20_architecture/I18N_ARCHITECTURE.md",
+    "20_architecture/sanity-studio-access.md",
     "30_design/DESIGN_SYSTEM.md",
     "30_design/THEME.json",
     "40_frontend/UI_IMPLEMENTATION_CHECKLIST.md",
     "40_frontend/I18N_IMPLEMENTATION_CHECKLIST.md",
     "60_qa/UI_FOUNDATION_CHECKLIST.md",
     "60_qa/I18N_QA_CHECKLIST.md",
-    "80_handoff/lead-developer.md"
+    "60_qa/QA_REPORT.md",
+    "70_release/RELEASE.md",
+    "80_handoff/lead-developer.md",
+    "80_handoff/qa-release.md",
+    "90_release/PUBLIC_VALIDATION_URL.md"
   ],
   "i18n": {
     "enabled": true,

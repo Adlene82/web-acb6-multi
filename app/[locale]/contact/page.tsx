@@ -13,9 +13,10 @@ export default async function ContactPage({ params }: Readonly<{ params: Promise
 
   if (!isLocale(locale)) notFound();
 
+  const currentLocale = locale as Locale;
   const [page, tPages] = await Promise.all([
-    getContactPageContent(locale as Locale),
-    getTranslations({ locale: locale as Locale, namespace: 'pages' }),
+    getContactPageContent(currentLocale),
+    getTranslations({ locale: currentLocale, namespace: 'pages' }),
   ]);
 
   return (
@@ -54,9 +55,10 @@ export default async function ContactPage({ params }: Readonly<{ params: Promise
       </Section>
 
       <CtaBand
+        locale={currentLocale}
         eyebrow={page.reassuranceEyebrow}
-        primaryLink={{ label: page.title, href: localizePath('/realisations', locale as Locale), variant: 'primary' }}
-        secondaryLink={{ label: tPages('expertises.title'), href: localizePath('/expertises', locale as Locale), variant: 'ghost' }}
+        primaryLink={{ label: page.title, href: localizePath('/realisations', currentLocale), variant: 'primary' }}
+        secondaryLink={{ label: tPages('expertises.title'), href: localizePath('/expertises', currentLocale), variant: 'ghost' }}
         helperText={page.reassuranceText}
       />
     </>

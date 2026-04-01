@@ -1,25 +1,19 @@
-# GO_NO_GO — ACB6
+# GO_NO_GO - ACB6
 
-## Entrées
+## Entrees
 - `BUILD_VERIFICATION.md`
 - `60_qa/QA_REPORT.md`
 - `70_release/RELEASE.md`
 - `STATE.json`
 
-## Décision
-- **GO**
+## Decision
+- **NO_GO**
 
 ## Motifs
-- Le build est validé.
-- La preview locale a été contrôlée.
-- La direction visuelle reste conforme au brief: premium B2B sobre, sans copie Samsung.
-- Les pages clés et la page Réalisations sont en place.
-- Les anomalies détectées sont mineures et non bloquantes.
-- L URL publique isolee `https://web-acb6-multi.vercel.app` a été revalidée en desktop/mobile.
-
-## Réserves non bloquantes
-- Le CTA du header mobile peut paraître serré sur petites largeurs.
-- Les visuels de couverture sont encore schématiques.
+- La QA publique n a pas valide les trois cibles requises: `https://web-acb6-multi.vercel.app`, `https://web-acb6-multi.vercel.app/ru`, `https://web-acb6-multi.vercel.app/studio`.
+- La route `/ru` a expose des fallbacks FR visibles.
+- La route `/studio` n a pas ete prouvee comme surface admin exploitable.
+- La branche projet etait `ahead` de `origin/main` au moment de la validation annoncee.
 
 ## Conclusion
-La version est suffisamment stable et lisible pour passer à la préparation de mise en ligne / preview accessible.
+La release publique est reouverte. Toute nouvelle validation exige GitHub a jour puis une QA separee sur site FR, site RU et admin `/studio`.
