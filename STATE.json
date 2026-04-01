@@ -3,9 +3,9 @@
   "project_id": "web-acb6-multi",
   "project_root": "/home/adlene/.openclaw/shared/webfactory-projects/acb6/web-acb6-multi",
   "mode": "PROD_AUTONOME",
-  "phase": "implementation",
+  "phase": "release",
   "current_owner": "po",
-  "next_action": "Commit/push le correctif local, puis relancer qa-release sur site FR, site RU et admin /studio avant toute nouvelle validation Vercel.",
+  "next_action": "Attendre les retours client ou une nouvelle demande.",
   "source_url": "https://www.acb6.fr",
   "reference_url": "https://www.apple.com/fr/",
   "public_urls": [
@@ -16,23 +16,23 @@
     {
       "label": "site_fr",
       "url": "https://web-acb6-multi.vercel.app",
-      "status": "pending_revalidation"
+      "status": "pass"
     },
     {
       "label": "site_ru",
       "url": "https://web-acb6-multi.vercel.app/ru",
-      "status": "pending_revalidation"
+      "status": "pass"
     },
     {
       "label": "admin_studio",
       "url": "https://web-acb6-multi.vercel.app/studio",
-      "status": "pending_revalidation"
+      "status": "pass"
     }
   ],
   "target_stack": "nextjs",
   "ui_foundation": "shadcn/ui + lucide-react + semantic tokens",
   "created_at": "20260401T164300Z",
-  "updated_at": "20260401T183930Z",
+  "updated_at": "20260401T185353Z",
   "tasks": {
     "brief": "done",
     "audit": "done",
@@ -40,17 +40,14 @@
     "design": "done",
     "frontend": "done",
     "backend": "done",
-    "qa": "pending",
-    "release": "blocked"
+    "qa": "done",
+    "release": "done"
   },
   "delegations": {
     "lead-developer": "done",
-    "qa-release": "queued"
+    "qa-release": "done"
   },
-  "blockers": [
-    "git_sync_pending: le correctif local est passe au build mais le commit n est pas encore visible sur origin/main",
-    "qa_revalidation_pending: site FR, site RU et admin /studio doivent etre revalidees apres synchronisation GitHub"
-  ],
+  "blockers": [],
   "artifacts": [
     "00_source/SOURCE.md",
     "10_brief/BRIEF.md",
@@ -68,7 +65,9 @@
     "70_release/RELEASE.md",
     "80_handoff/lead-developer.md",
     "80_handoff/qa-release.md",
-    "90_release/PUBLIC_VALIDATION_URL.md"
+    "90_release/PUBLIC_VALIDATION_URL.md",
+    "BUILD_VERIFICATION.md",
+    "90_release/GO_NO_GO.md"
   ],
   "i18n": {
     "enabled": true,

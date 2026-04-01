@@ -12,7 +12,7 @@ inputs:
 outputs:
   - `60_qa/QA_REPORT.md` recrit avec matrice URL complete
   - `70_release/RELEASE.md` aligne sur le verdict reel
-  - preuve `skills_used` tracee sur disque
+  - preuve `skills_used:` tracee sur disque
 constraints:
   - charger `qa-checklists`, `accessibility`, `playwright-pro`, `github`, `vercel-release`
   - ecrire explicitement `skills_used:` dans le rapport
@@ -22,5 +22,5 @@ constraints:
 definition_of_done:
   - le rapport QA liste les trois URLs, leur resultat et le verdict final
   - le verdict est `GO` seulement si les trois cibles passent et si GitHub est synchronise
-status: queued
-next_action: verifier la matrice complete apres le correctif lead-developer puis rouvrir ou bloquer la release de facon explicite.
+status: done
+next_action: attendre une nouvelle demande ou un retour client.

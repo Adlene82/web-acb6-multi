@@ -7,13 +7,13 @@
 - `STATE.json`
 
 ## Decision
-- **NO_GO**
+- **GO**
 
 ## Motifs
-- La QA publique n a pas valide les trois cibles requises: `https://web-acb6-multi.vercel.app`, `https://web-acb6-multi.vercel.app/ru`, `https://web-acb6-multi.vercel.app/studio`.
-- La route `/ru` a expose des fallbacks FR visibles.
-- La route `/studio` n a pas ete prouvee comme surface admin exploitable.
-- La branche projet etait `ahead` de `origin/main` au moment de la validation annoncee.
+- La QA publique a valide les trois cibles requises: `https://web-acb6-multi.vercel.app`, `https://web-acb6-multi.vercel.app/ru`, `https://web-acb6-multi.vercel.app/studio`.
+- La route `/ru` affiche bien le contenu localise RU sans melange FR visible.
+- La route `/studio` expose une surface Studio visible et exploitable.
+- La branche projet est synchronisee avec `origin/main`.
 
 ## Conclusion
-La release publique est reouverte. Toute nouvelle validation exige GitHub a jour puis une QA separee sur site FR, site RU et admin `/studio`.
+La release publique est validee.

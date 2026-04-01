@@ -1,7 +1,7 @@
 # QA_REPORT.md
 
 ## Statut
-- NO_GO
+- GO
 
 skills_used: qa-checklists, accessibility, playwright-pro, github, vercel-release
 
@@ -12,16 +12,22 @@ skills_used: qa-checklists, accessibility, playwright-pro, github, vercel-releas
 - `github`
 - `vercel-release`
 
-## Motifs bloquants
-- `https://web-acb6-multi.vercel.app/ru` a laisse apparaitre des libelles FR issus de fallbacks composants et des liens internes non localises.
-- `https://web-acb6-multi.vercel.app/studio` repond publiquement, mais la surface admin n a pas ete validee comme interface exploitable; la page publique a ete constatee vide lors du controle.
-- Le repo local du projet etait `ahead` de `origin/main`, donc la validation release a ete annoncee alors que GitHub n etait pas encore synchronise.
+## Verification effectuee
+- GitHub synchronise: `main == origin/main` (`c022b69`)
+- URL FR verifiee: `https://web-acb6-multi.vercel.app` -> `200`
+- URL RU verifiee: `https://web-acb6-multi.vercel.app/ru` -> `200`, avec contenu integralement russe sur la capture de verification
+- URL admin verifiee: `https://web-acb6-multi.vercel.app/studio` -> `200`, avec surface Studio visible et options de connexion (Google / GitHub / e-mail)
+
+## Motifs valides
+- Le site FR repond correctement.
+- Le site RU ne laisse plus apparaitre de melange FR/RU visible.
+- L admin `/studio` n est plus une page vide; la surface Studio est accessible et exploitable.
 
 ## Matrice URL
-- `site FR` -> `https://web-acb6-multi.vercel.app` -> acces public `200`, mais revalidation complete requise apres correction locale.
-- `site RU` -> `https://web-acb6-multi.vercel.app/ru` -> FAIL public: melange FR/RU observe.
-- `admin /studio` -> `https://web-acb6-multi.vercel.app/studio` -> FAIL public: URL en scope mais validation fonctionnelle absente; page constatee vide.
+- `site FR` -> `https://web-acb6-multi.vercel.app` -> PASS public `200`.
+- `site RU` -> `https://web-acb6-multi.vercel.app/ru` -> PASS public `200`, contenu localise RU.
+- `admin /studio` -> `https://web-acb6-multi.vercel.app/studio` -> PASS public `200`, surface visible.
 
 ## Verdict
-- La release publique actuelle ne peut pas rester en `GO`.
-- Une nouvelle QA ne pourra repasser en `GO` qu apres synchronisation GitHub puis revalidation separee de `site FR`, `site RU` et `admin /studio`.
+- Verdict global: `GO`.
+- Les trois cibles passent simultanement et GitHub est synchronise.

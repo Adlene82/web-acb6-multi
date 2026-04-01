@@ -7,11 +7,11 @@
 
 ## Etat courant
 - Le projet Vercel dedie `web-acb6-multi` reste bien lie au dossier `web-acb6-multi`.
-- La release publique actuelle est gelee en `non GO`.
-- L admin `/studio` est en scope produit mais n a pas de validation admin exploitable documentee.
-- Le repo dedie `https://github.com/Adlene82/web-acb6-multi` etait en retard par rapport a la branche locale au moment de la validation annoncee.
+- La release publique est en `GO`.
+- L admin `/studio` est en scope produit et expose une surface Studio visible.
+- Le repo dedie `https://github.com/Adlene82/web-acb6-multi` est synchronise avec `origin/main`.
 
-## Regle de reprise
-1. GitHub doit etre synchronise avant toute nouvelle validation Vercel.
-2. La QA doit couvrir separement `site FR`, `site RU` et `admin /studio`.
-3. Une seule URL publique ne suffit plus pour declarer le projet livre.
+## Regle de livraison
+1. Les trois URLs canoniques restent la reference de validation.
+2. Une seule URL publique ne suffit jamais pour declarer le projet livre.
+3. Toute nouvelle demande de modification doit repartir de cette matrice.
